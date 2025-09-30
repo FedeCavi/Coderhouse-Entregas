@@ -25,33 +25,53 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+}
 
-    img {
-        width: 100%;
-        display: block;
-        transition: all 0.3s ease;
-    }
 
-    &:hover img {
-        transform: scale(1.05);
-        filter: brightness(0.7);
-    }
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
 
-    &::after {
-        content: "Adopta y cambia una vida";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        color: #fff;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+.overlay-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-    &:hover::after {
-        opacity: 1;
-    }
+.img-container:hover .overlay-btn {
+    opacity: 1;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+&:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+&::after {
+    content: "Adopta y cambia una vida";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+&:hover::after {
+    opacity: 1;
 }
