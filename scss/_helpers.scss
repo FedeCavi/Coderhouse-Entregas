@@ -1,0 +1,18 @@
+/* Helpers */ 
+%card-base {
+  border-radius: $base-radius;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: $gutter;
+  background: white;
+}
+
+.card {
+  @extend %card-base;
+  .card-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .card-body {
+    font-size: 0.95rem;
+  }
+}
